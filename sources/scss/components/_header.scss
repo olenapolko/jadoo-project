@@ -1,0 +1,115 @@
+.header{
+    position: relative;
+    background: url(../../../img/header/decore.svg) no-repeat top right;
+    @include adaptive-value(padding-bottom, 140, 92, 1);
+
+    @media (max-width: $sm) {
+        background: none;
+    }
+
+    &__body{
+        @include adaptive-value(padding-top, 67, 37, 1);
+    }
+
+    &__ellipse{
+        position: absolute;
+        top: -60px;
+    }
+
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__main{
+        display: flex;
+        font-family: 'Google Sans';
+        font-size: 17px;
+        color: #212832;
+    }
+
+    &__logo{
+        margin-right: 18px;
+        min-width: 115px;
+    }
+
+    &__menu{
+        margin-right: 86px;
+        
+        @media (max-width: $md) {
+            margin-right: 18px;
+        }
+    }
+}
+
+.menu{
+    &__list{
+        display: flex;
+
+        @media (max-width: $sm) {
+            display: none;
+        }
+    }
+
+    &__item{
+        transition: all 0.5s ease;
+        width: 100%;
+
+        &:hover {
+            transform: scale(1.2);
+            color: $first-accent-color;
+        }
+    }
+
+    &__item:not(:last-child){
+        @include adaptive-value(margin-right, 55, 1, 1);
+    }
+
+    &__link{
+        @media (max-width: $sm) {
+            padding: 30px;
+        }
+    }
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+
+    &__list{
+        display: flex;
+
+        @media (max-width: $sm) {
+            display: none;
+        }
+    }
+
+    &__item{
+        transition: all 0.5s ease;
+
+        &:hover {
+            transform: scale(1.2);
+            color: $first-accent-color;
+        }
+    }
+
+    &__link-login{
+        @include adaptive-value(margin-right, 52, 1, 1);
+    }
+
+    &__link-sign{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px 21px;
+        @include adaptive-value(margin-right, 42, 1, 1);
+        white-space: nowrap; 
+    }
+
+    &__btn{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+}

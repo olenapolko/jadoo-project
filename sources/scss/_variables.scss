@@ -1,0 +1,39 @@
+$align-center: center;
+
+// Colors
+$title-color: #181E4B;
+$main-text-color: #5E6282;
+$first-accent-color: #F1A501;
+$second-accent-color: #DF6951;
+
+// Container
+$minWidth: 414;
+$maxWidth: 1440;
+$maxWidthContainer: 1200;
+
+// Fonts
+$font-follback: Arial,
+Helvetica,
+sans-serif;
+$main-font-name: 'Poppins', sans-serif;
+$title-font-name: 'Volkhov';
+$nav-font-name: 'Open Sans';
+
+$base-font-size: 16px;
+$title-font-size: 50px;
+$base-line-height: 188%;
+$title-line-height: 64px;
+$base-font-weight: 500;
+$title-font-weight: 700;
+
+$form-border-radius: 5px;
+$form-padding: 0 10px;
+$textarea-padding: 10px;
+$form-input-height: 50px;
+
+
+// Break-points
+$lg: $maxWidthContainer + 12px;
+$md: 991.98px;
+$sm: 767.98px;
+$xs: 413,98px;

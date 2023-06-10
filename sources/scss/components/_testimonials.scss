@@ -1,0 +1,81 @@
+.testimonials{
+    &__container{
+        @include adaptive-value(padding-top, 114, 63, 1);
+        @include adaptive-value(padding-bottom, 173, 74, 1);
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $md) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: rem(80);
+        }
+    }
+
+    &__card{
+        @include adaptive-value(width, 504, 359, 1);
+        position: relative;
+        padding: 28px 34px 34px;
+
+        @media (max-width: $sm) {
+            padding: 21px 9px 16px;
+        }
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+
+        @media (max-width: $md) {
+            gap: rem(27);
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__subtitle{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: em(18);
+   
+    }
+
+    &__title{
+        max-width: 409px;
+        text-transform: capitalize;
+    }
+
+}
+
+.card{
+    &__avatar{
+        position: absolute;
+        top: -34px;
+        left: -37px;
+
+        @media (max-width: $sm) {
+            left: calc(50% - 68px / 2);
+            top: -50px;
+        }
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $sm) {
+            align-items: center;
+        }
+    }
+
+    &__name{
+        font-weight: 600;
+        font-size: em(18);
+        margin-top: 34px;
+    }
+}

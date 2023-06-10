@@ -1,0 +1,178 @@
+.hero{
+    &__body{
+        background: url(../../../img/hero/traveller-girl.png) no-repeat top right;
+        @include adaptive-value(padding-top, 130, 100, 1);
+        @include adaptive-value(padding-bottom, 70, 0, 1);
+
+        background-position: top 0 right -10%;
+
+        @media (max-width: $md) {
+            background-position: top 0 right -40%;
+        }
+
+        @media (max-width: $sm) {
+            background: none;
+        }
+    }
+
+    &__content{
+        width: 52%;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $sm) {
+            width: 100%;
+        }
+    }
+
+    @keyframes flyAway {
+        0% {
+          transform: translate(0, 0);
+        }
+
+        50% {
+          transform: translate(300%, 200%);
+
+        }
+
+        100%{
+            transform: translate(1000%, -400%);
+        }
+
+      }
+
+    &__wrapper{
+        display: flex;
+        position: relative;
+
+        @media (max-width: $sm) {
+           display: block;
+        }
+    }
+
+    &__plane-animated{
+        position: absolute;
+        top: 13%;
+        left: 45%;
+        cursor: pointer;
+        animation: none;
+
+        &:hover{
+            animation: flyAway 3s;
+        }
+
+        @media (max-width: $md) {
+            display: none;
+        }
+    }
+
+    &__plane{
+        position: absolute;
+        top: 20%;
+        left: 90%;
+
+        @media (max-width: $sm) {
+            top: 10%;
+            left: 0;
+            z-index: -1;
+        }
+    }
+
+    &__stars{
+        position: absolute;
+        display: none;
+        
+        @media (max-width: $sm) {
+            display: block;
+            right: -70px;
+            bottom: 80px;
+        }
+    }
+}
+
+.main-content{
+    position: relative;
+
+    @media (max-width: $md) {
+        background-color: #ffffff7f;
+    }
+
+    @media (max-width: $sm) {
+        max-width: rem(337);
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__description{
+        color: $second-accent-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        display: inline-block;
+
+        @media (max-width: $sm) {
+            display: none;
+        }
+    }
+
+    &__title{
+        @include adaptive-value(font-size, 84, 48, 1);
+        margin-bottom: 30px;
+        line-height: 106%;
+        color: #181E4B;
+        font-family: $title-font-name;
+
+        @media (max-width: $sm) {
+            font-size: rem(48);
+            line-height: 185%;
+            text-align: center;
+        }
+    }
+
+    &__text{
+        margin-bottom: 34px;
+        max-width: 476px;
+        width: 100%;
+
+        @media (max-width: $sm) {
+
+            display: none;
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        gap: 44px;
+
+        @media (max-width: $sm) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+
+    &__more{
+        @include button-basic($first-accent-color, #FFF,170, 60, 10);
+        box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+    }
+
+    &__demo{
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__play-icon{
+        background-color: $second-accent-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        width: 52px;
+        height: 52px;
+        margin-right: 20px;
+        box-shadow: 0px 15px 30px 0px rgba(223, 105, 81, 0.3);
+    }
+}
+
+
