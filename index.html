@@ -19,12 +19,14 @@
                 <div class="header__main">
                     <div class="header__menu menu">
                         <nav class="menu__body">
-                            <ul class="menu__list">
-                                <li class="menu__item"><a class="menu__link" href="#">Desitnations</a></li>
-                                <li class="menu__item"><a class="menu__link" href="#">Hotels</a></li>
-                                <li class="menu__item"><a class="menu__link" href="#">Flights</a></li>
-                                <li class="menu__item"><a class="menu__link" href="#">Bookings</a></li>
-                            </ul>
+                            <input type="checkbox" class="menu__toggle">
+                            <div class="menu__hamburger"></div>
+                                <ul class="menu__list">
+                                    <li class="menu__item"><a class="menu__link" href="#">Destinations</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#">Hotels</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#">Flights</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#">Bookings</a></li>
+                                </ul>
                         </nav>
                     </div>
                     <div class="header__actions actions">
@@ -70,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <img class="header__ellipse" src="img/header/ellipse.svg" alt="Ellipse decor">
+        <div class="header__ellipse"></div>
     </header>
     <main class="main">
         <section class="services">
@@ -245,7 +247,7 @@
                             </div>
                             <div class="steps__ongoing ongoing">
                                 <div class="ongoing__img-wrapper">
-                                  <img class="ongoing__img" src="img/steps/image 32.png" alt="Picture of Europe">
+                                  <img class="ongoing__img" src="img/steps/city.png" alt="Picture of Europe">
                                 </div>
                                 <div class="ongoing__content">
                                   <span class="ongoing__subtitle">Ongoing</span>
@@ -288,7 +290,7 @@
             <div class="partners__container container">
                 <div class="partners__wrapper">
                     <div class="partners__item">
-                        <img class="partners__img" src="img/partners/axon.svg" alt="Axon logo">
+                        <img class="partners__img" src="img/partners/axon.png" alt="Axon logo">
                     </div>
                     <div class="partners__item">
                         <img class="partners__img" src="img/partners/jetstar.png" alt="Jetstar logo">
@@ -417,25 +419,30 @@
                         <div class="socials__stores stores">
                             <p class="stores__text">Discover our app</p>
                             <ul class="stores__list">
-                                <li class="stores__item"><a href="#" class="stores__link">
+                                <li class="stores__item">
+                                    <a href="https://play.google.com/store/games" target="_blank" class="stores__link">
                                         <svg width="30" height="20">
                                             <use href="./img/sprite.svg#play-icon"></use>
                                         </svg>
                                         <svg width="54" height="15">
                                             <use href="./img/sprite.svg#play-text"></use>
                                         </svg>
-                                </a></li>
-                                <li class="stores__item"><a href="#" class="stores__link">
+                                    </a>
+                                </li>
+                                <li class="stores__item">
+                                    <a href="https://www.apple.com/ua/app-store/" target="_blank" class="stores__link">
                                         <svg width="20" height="20">
                                             <use href="./img/sprite.svg#apple-icon"></use>
                                         </svg>
                                         <svg width="54" height="20">
                                             <use href="./img/sprite.svg#apple-text"></use>
                                         </svg>
-                                </a></li>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
+                    <div class="footer__ellipse"></div>
                 </div>
                 <div class="footer__copyright">
                     All rights reserved@jadoo.co

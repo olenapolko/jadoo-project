@@ -15,7 +15,6 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			padding-bottom: rem(58);
 		}
 	}
 
@@ -151,7 +150,6 @@
 		position: absolute;
 		top: -13px;
 		right: -15px;
-		z-index: 20;
 
 		@media (max-width: $sm) {
 			position: static;

@@ -1,14 +1,18 @@
 .partners{
+    // padding-bottom: rem(145);
+    @include adaptive-value(padding-bottom, 145, 60, 1);
+   
+
+
     &__wrapper{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: rem(145);
 
         @media (max-width: $sm) {
             flex-direction: column;
-            padding-bottom: rem(83);
+            padding-top: 79px;
         }
     }
 

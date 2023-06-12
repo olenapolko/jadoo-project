@@ -1,10 +1,5 @@
 @use "sass:math";
 
-@function percent($px, $from) {
-	$result: math.div($px, $from) * 100%;
-	@return $result;
-}
-
 @function em($px, $base-size: 16) {
     $result: math.div($px, $base-size) + em;
     @return $result;
@@ -45,7 +40,6 @@
     }
 }
 
-
 @mixin button-basic($background-color, $text-color, $width, $height, $border-radius) {
     background-color: $background-color;
     color: $text-color;
@@ -56,5 +50,4 @@
     align-items: center;
     justify-content: center;
     font-family: 'Open Sans';
-
 }  

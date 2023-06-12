@@ -1,4 +1,6 @@
 .footer {
+    position: relative;
+    overflow: hidden;
     @include adaptive-value(padding-top, 96, 13, 1);
     @include adaptive-value(padding-bottom, 79, 27, 1);
 
@@ -6,14 +8,12 @@
         background-color:  #FFF1DA;
     }
 
-    &__container {
-    }
-
     &__wrapper {
         display: grid;
         grid-template-columns: 207px 1fr 214px;
         @include adaptive-value(column-gap, 82, 0, 1);
         @include adaptive-value(padding-bottom, 84, 58, 1);
+
 
         @media (max-width: $md) {
             grid-template-rows: auto auto;
@@ -71,6 +71,21 @@
         margin: 0 auto;
         font-size: rem(14);
 
+    }
+
+    &__ellipse{
+        width: 480px;
+        height: 497px;
+        background: #D5AEE4;
+        opacity: 0.3;
+        filter: blur(75px);
+        position: absolute;
+        right: -384px;
+        bottom: -280px;
+
+        @media (max-width: $sm) {
+            display: none;
+        }
     }
 }
 
