@@ -1,8 +1,9 @@
 .hero{
     &__body{
         background: url(../../../img/hero/traveller-girl.png) no-repeat top right;
+        position: relative;
         @include adaptive-value(padding-top, 130, 100, 1);
-        @include adaptive-value(padding-bottom, 70, 0, 1);
+        @include adaptive-value(padding-bottom, 70, 30, 1);
 
         background-position: top 0 right -10%;
 
@@ -76,6 +77,7 @@
             display: block;
             right: -70px;
             bottom: 80px;
+            z-index: -1;
         }
     }
 }
@@ -95,10 +97,11 @@
     }
 
     &__description{
+        font-size: rem(20);
         color: $second-accent-color;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 24px;
+        margin-bottom: em(24, 20);
         display: inline-block;
 
         @media (max-width: $sm) {
@@ -108,7 +111,7 @@
 
     &__title{
         @include adaptive-value(font-size, 84, 48, 1);
-        margin-bottom: 30px;
+        margin-bottom: em(30, 84);
         line-height: 106%;
         color: #181E4B;
         font-family: $title-font-name;
@@ -121,12 +124,11 @@
     }
 
     &__text{
-        margin-bottom: 34px;
-        max-width: 476px;
+        margin-bottom: em(34);
+        max-width: rem(476);
         width: 100%;
 
         @media (max-width: $sm) {
-
             display: none;
         }
     }
@@ -148,7 +150,7 @@
     }
 
     &__demo{
-        font-size: 17px;
+        font-size: rem(17);
         display: flex;
         align-items: center;
     }
@@ -158,7 +160,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50px;
+        border-radius: 50%;
         width: 52px;
         height: 52px;
         margin-right: 20px;

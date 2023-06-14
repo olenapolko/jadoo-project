@@ -1,10 +1,10 @@
 .subscribe{
 	&__container{
 		padding-top: 20px;
-		padding-bottom: rem(70);
+		padding-bottom: 70px;
 
 		@media (max-width: $sm) {
-			padding-bottom: rem(58);
+			padding-bottom: 58px;
 		}
 	}
 
@@ -22,7 +22,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: rem(74);
+		gap: 74px;
         max-width: rem(1170);
 		@include adaptive-value("padding-top", 79, 25, 1);
 		@include adaptive-value("padding-right", 155, 34, 1);
@@ -56,7 +56,7 @@
     }	
 
     &__form {
-		max-width: 640px;
+		max-width: rem(640);
 		display: flex;
         gap: 38px;
         align-items:center;
@@ -69,10 +69,11 @@
 	&__input{
 		@include adaptive-value("padding-top", 25, 15, 1);
 		@include adaptive-value("padding-right", 281, 15, 1);
-		@include adaptive-value("padding-left", 66, 25, 1);
 		@include adaptive-value("padding-bottom", 25, 15, 1);
-		border-radius: rem(10);
+		@include adaptive-value("padding-left", 66, 25, 1);
+		border-radius: 10px;
         background-color: #fff;
+
 		&::placeholder {
 			font-family: 'Montserrat';
 			font-style: normal;
@@ -81,8 +82,9 @@
 			@include adaptive-value("line-height", 17, 12, 1);
 			color: #39425D;
 		}
+
 		&:focus {
-			border: rem(1) solid grey;
+			border: 1px solid grey;
 		}
 
 		@media (max-width: $sm) {
@@ -95,17 +97,17 @@
         font-style: normal;
         font-weight: 600;
         font-size: rem(17);
-        line-height: rem(23);
+        line-height: em(23, 17);
         text-align: center;
         color: #FFFFFF;
-        padding: rem(22) rem(50);
+        padding: em(22, 17) em(50, 17);
         background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
-        border-radius: rem(10);
+        border-radius: 10px;
     }
 
     &__title{
-        color: #5E6282;
-        font-size: em(33);
+        color: $main-text-color;
+        font-size: rem(33);
         font-weight: 600;
         line-height: 164%;
         text-align: center;
@@ -117,8 +119,8 @@
 
 	&__circles-big{
 		position: absolute;
-		top: rem(130);
-		left: rem(20);
+		top: 130px;
+		left: 20px;
 		z-index: -1;
 		opacity: 0.2;
 

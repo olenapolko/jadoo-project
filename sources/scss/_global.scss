@@ -33,11 +33,23 @@ body{
     font-weight: $title-font-weight;
     font-size: $title-font-size;
     color: $title-color;
+    text-transform: capitalize;
     @include adaptive-value(line-height, 64, 52, 1);
 
     @media (max-width: $sm) {
         font-size: 40px;
         text-align: center;
+    }
+}
+
+.subtitle{
+    font-weight: $subtitle-font-weight;
+    font-size: $subtitle-font-size;
+    line-height: $subtitle-line-height;
+    display: inline-block;
+
+    @media (max-width: $sm) {
+        font-size: 20px;
     }
 }
 
