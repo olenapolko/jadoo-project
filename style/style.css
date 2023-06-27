@@ -157,7 +157,7 @@ body {
 
 .header {
   position: relative;
-  background: url(/img/header/decore.png) no-repeat top right;
+  background: url(../../../img/header/decore.png) no-repeat top right;
   padding-bottom: 140px;
 }
 @media (max-width: 1200px) {
@@ -441,7 +441,7 @@ input:checked ~ .menu__hamburger:after {
 }
 
 .hero__body {
-  background: url(/img/hero/traveller-girl.png) no-repeat top right;
+  background: url(../../../img/hero/traveller-girl.png) no-repeat top right;
   position: relative;
   padding-top: 130px;
   padding-bottom: 70px;
@@ -678,7 +678,7 @@ input:checked ~ .menu__hamburger:after {
 }
 
 .services {
-  background: url(/img/services/stars.svg) no-repeat top right;
+  background: url(../../../img/services/stars.svg) no-repeat top right;
   padding-bottom: 7.6875rem;
 }
 @media (max-width: 767.98px) {
