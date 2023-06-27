@@ -1,6 +1,6 @@
 .hero{
     &__body{
-        background: url(../../../img/hero/traveller-girl.png) no-repeat top right;
+        background: url(/img/hero/traveller-girl.png) no-repeat top right;
         position: relative;
         @include adaptive-value(padding-top, 130, 100, 1);
         @include adaptive-value(padding-bottom, 70, 30, 1);

@@ -1,6 +1,6 @@
 .header{
     position: relative;
-    background: url(../../../img/header/decore.png) no-repeat top right;
+    background: url(/img/header/decore.png) no-repeat top right;
     @include adaptive-value(padding-bottom, 140, 62, 1);
 
     @media (max-width: $sm) {
