@@ -217,7 +217,7 @@
     }
 
     &__link-sign{
-        border: 1px solid black;
+        border: 1px solid $black-color;
         border-radius: 5px;
         padding: 10px 21px;
         @include adaptive-value(margin-right, 42, 1, 1);
@@ -225,7 +225,7 @@
 
         &:hover {
             background-color: $first-accent-color;
-            color: white;
+            color: $white-color;
         }
     }
 

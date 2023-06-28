@@ -45,7 +45,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #DFD7F9;
+        background-color: $purple-bg-color;
         opacity: 0.2;
         border-radius: inherit;
         z-index: -1;
@@ -72,7 +72,7 @@
 		@include adaptive-value("padding-bottom", 25, 15, 1);
 		@include adaptive-value("padding-left", 66, 25, 1);
 		border-radius: 10px;
-        background-color: #fff;
+        background-color: $white-color;
 
 		&::placeholder {
 			font-family: 'Montserrat';
@@ -80,11 +80,11 @@
 			font-weight: 400;
 			@include adaptive-value("font-size", 14, 9, 1);
 			@include adaptive-value("line-height", 17, 12, 1);
-			color: #39425D;
+			color: $placeholder-color;
 		}
 
 		&:focus {
-			border: 1px solid grey;
+			border: 1px solid $grey-color;
 		}
 
 		@media (max-width: $sm) {
@@ -99,10 +99,14 @@
         font-size: rem(17);
         line-height: em(23, 17);
         text-align: center;
-        color: #FFFFFF;
+        color: $white-color;
         padding: em(22, 17) em(50, 17);
         background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
         border-radius: 10px;
+
+		&:hover{
+			cursor: pointer;
+		}
     }
 
     &__title{

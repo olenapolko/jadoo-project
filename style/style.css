@@ -118,7 +118,7 @@ body {
 }
 
 .title {
-  font-family: "Volkhov";
+  font-family: "Volkhov", serif;
   font-weight: 700;
   font-size: 50px;
   color: #181E4B;
@@ -185,7 +185,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Google Sans";
+  font-family: "Google Sans", sans-serif;
   font-size: 1.0625rem;
   color: #212832;
 }
@@ -413,7 +413,7 @@ input:checked ~ .menu__hamburger:after {
   }
 }
 .actions__link-sign {
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 5px;
   padding: 10px 21px;
   margin-right: 42px;
@@ -426,7 +426,7 @@ input:checked ~ .menu__hamburger:after {
 }
 .actions__link-sign:hover {
   background-color: #F1A501;
-  color: white;
+  color: #FFFFFF;
 }
 .actions__btn {
   cursor: pointer;
@@ -598,7 +598,7 @@ input:checked ~ .menu__hamburger:after {
   margin-bottom: 0.3571428571em;
   line-height: 106%;
   color: #181E4B;
-  font-family: "Volkhov";
+  font-family: "Volkhov", serif;
 }
 @media (max-width: 1200px) {
   .main-content__title {
@@ -642,7 +642,7 @@ input:checked ~ .menu__hamburger:after {
 }
 .main-content__more {
   background-color: #F1A501;
-  color: #FFF;
+  color: #FFFFFF;
   width: 170px;
   height: 60px;
   border-radius: 10px;
@@ -763,7 +763,7 @@ input:checked ~ .menu__hamburger:after {
   cursor: pointer;
   border-radius: 36px;
   position: relative;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 .services__item h5 {
   font-family: "Open Sans";
@@ -950,7 +950,7 @@ input:checked ~ .menu__hamburger:after {
   left: 0;
   right: 0;
   height: 8.125rem;
-  background-color: #fff;
+  background-color: #FFFFFF;
   padding: 27px 20px 42px;
 }
 @media (max-width: 767.98px) {
@@ -1123,7 +1123,7 @@ input:checked ~ .menu__hamburger:after {
   width: 370px;
   border-radius: 26px;
   position: relative;
-  background-color: #fff;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1.85px 3.15px rgba(0, 0, 0, 0.0048), 0px 8.15px 6.52px rgba(0, 0, 0, 0.0079), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 38.52px 25.48px rgba(0, 0, 0, 0.0121), 0px 64.81px 46.85px rgba(0, 0, 0, 0.0152), 0px 100px 80px rgba(0, 0, 0, 0.02);
           box-shadow: 0px 1.85px 3.15px rgba(0, 0, 0, 0.0048), 0px 8.15px 6.52px rgba(0, 0, 0, 0.0079), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 38.52px 25.48px rgba(0, 0, 0, 0.0121), 0px 64.81px 46.85px rgba(0, 0, 0, 0.0152), 0px 100px 80px rgba(0, 0, 0, 0.02);
 }
@@ -1133,7 +1133,7 @@ input:checked ~ .menu__hamburger:after {
   }
 }
 .card__img {
-  border: 1px solid #000;
+  border: 1px solid #000000;
   border-radius: 24px;
 }
 .card__text {
@@ -1201,7 +1201,7 @@ input:checked ~ .menu__hamburger:after {
 .ongoing {
   padding: 1.25rem;
   border-radius: 18px;
-  background-color: #fff;
+  background-color: #FFFFFF;
   max-width: 16.4375rem;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -1401,7 +1401,7 @@ input:checked ~ .menu__hamburger:after {
   max-width: 11.25rem;
   width: 100%;
   height: 5.375rem;
-  background-color: #fff;
+  background-color: #FFFFFF;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1544,7 +1544,7 @@ input:checked ~ .menu__hamburger:after {
   padding-bottom: 25px;
   padding-left: 66px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 @media (max-width: 1200px) {
   .subscribe__input {
@@ -1641,7 +1641,7 @@ input:checked ~ .menu__hamburger:after {
   }
 }
 .subscribe__input:focus {
-  border: 1px solid grey;
+  border: 1px solid #5E6282;
 }
 @media (max-width: 767.98px) {
   .subscribe__input {
@@ -1660,6 +1660,9 @@ input:checked ~ .menu__hamburger:after {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF946D), to(#FF7D68));
   background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
   border-radius: 10px;
+}
+.subscribe__btn:hover {
+  cursor: pointer;
 }
 .subscribe__title {
   color: #5E6282;
@@ -1929,7 +1932,7 @@ input:checked ~ .menu__hamburger:after {
   margin-top: 1rem;
 }
 .stores__item {
-  background-color: #000;
+  background-color: #000000;
   border-radius: 17px;
   width: 6.6875rem;
   height: 2.1875rem;

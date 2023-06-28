@@ -3,6 +3,11 @@ $title-color: #181E4B;
 $main-text-color: #5E6282;
 $first-accent-color: #F1A501;
 $second-accent-color: #DF6951;
+$placeholder-color: #39425D;
+$purple-bg-color: #DFD7F9;
+$white-color: #FFFFFF;
+$grey-color: #5E6282;
+$black-color: #000000;
 
 // Container
 $minWidth: 414;
@@ -11,8 +16,9 @@ $maxWidthContainer: 1200;
 
 // Fonts
 $main-font-name: 'Poppins', sans-serif;
-$title-font-name: 'Volkhov';
-$nav-font-name: 'Google Sans';
+$title-font-name: 'Volkhov', serif;
+$nav-font-name: 'Google Sans', sans-serif;
+$placeholder-font-name: 'Montserrat', sans-serif;
 
 $base-font-size: 16px;
 $base-line-height: 188%;
@@ -25,7 +31,6 @@ $title-font-weight: 700;
 $subtitle-font-size: 18px;
 $subtitle-line-height: 150%;
 $subtitle-font-weight: 600;
-
 
 // Break-points
 $lg: $maxWidthContainer + 12px;
