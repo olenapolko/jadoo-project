@@ -157,17 +157,11 @@ body {
 
 .header {
   position: relative;
-  background: url(../../../img/header/decore.png) no-repeat top right;
   padding-bottom: 140px;
 }
 @media (max-width: 1200px) {
   .header {
     padding-bottom: calc(62px + 78 * ((100vw - 414px) / 786));
-  }
-}
-@media (max-width: 767.98px) {
-  .header {
-    background: none;
   }
 }
 .header__body {
@@ -236,6 +230,17 @@ body {
 }
 @media (max-width: 767.98px) {
   .header__ellipse {
+    display: none;
+  }
+}
+.header__stain {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+@media (max-width: 767.98px) {
+  .header__stain {
     display: none;
   }
 }
@@ -441,7 +446,6 @@ input:checked ~ .menu__hamburger:after {
 }
 
 .hero__body {
-  background: url(../../../img/hero/traveller-girl.png) no-repeat top right;
   position: relative;
   padding-top: 130px;
   padding-bottom: 70px;
@@ -455,11 +459,6 @@ input:checked ~ .menu__hamburger:after {
 @media (max-width: 1200px) {
   .hero__body {
     padding-bottom: calc(30px + 40 * ((100vw - 414px) / 786));
-  }
-}
-@media (max-width: 991.98px) {
-  .hero__body {
-    background: none;
   }
 }
 @-webkit-keyframes flyAway {
@@ -506,6 +505,7 @@ input:checked ~ .menu__hamburger:after {
   top: 13%;
   left: 45%;
   cursor: pointer;
+  z-index: 1;
   -webkit-animation: none;
           animation: none;
 }
@@ -521,7 +521,7 @@ input:checked ~ .menu__hamburger:after {
 .hero__plane {
   position: absolute;
   top: 20%;
-  left: 90%;
+  left: 92%;
 }
 @media (max-width: 991.98px) {
   .hero__plane {
@@ -546,6 +546,16 @@ input:checked ~ .menu__hamburger:after {
     right: -70px;
     bottom: 80px;
     z-index: -1;
+  }
+}
+.hero__girl {
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+@media (max-width: 991.98px) {
+  .hero__girl {
+    display: none;
   }
 }
 
@@ -678,13 +688,10 @@ input:checked ~ .menu__hamburger:after {
 }
 
 .services {
-  background: url(../../../img/services/stars.svg) no-repeat top right;
   padding-bottom: 7.6875rem;
 }
-@media (max-width: 767.98px) {
-  .services {
-    background: none;
-  }
+.services__container {
+  position: relative;
 }
 .services__header {
   display: -webkit-box;
@@ -828,6 +835,17 @@ input:checked ~ .menu__hamburger:after {
 }
 .services__icon {
   z-index: 1;
+}
+.services__decor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+@media (max-width: 767.98px) {
+  .services__decor {
+    display: none;
+  }
 }
 
 @media (max-width: 767.98px) {

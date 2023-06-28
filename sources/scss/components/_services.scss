@@ -1,9 +1,8 @@
 .services{
-    background: url(../../../img/services/stars.svg) no-repeat top right;
     padding-bottom: rem(123);
 
-    @media (max-width: $sm) {
-        background: none;
+    &__container{
+        position: relative;
     }
 
     &__header{
@@ -126,5 +125,16 @@
 
     &__icon{
         z-index: 1;
+    }
+
+    &__decor{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+
+        @media (max-width: $sm) {
+            display: none;
+        }
     }
 }
